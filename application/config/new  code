@@ -1,0 +1,144 @@
+SELECT * FROM `attendencelog` WHERE `pin` = '33492308' AND `exactdate` LIKE '%2020-10-22%'
+
+INSERT INTO db_acl.attendencelog (pin, exactdate, verified, status, workcode, timeinserts) SELECT pin, datetime_reader, verified, status, workcode, timeinserts FROM desktoptimek.attendencelog WHERE `pin` = '33492308' AND `datetime_reader` LIKE '%2020-10-17%'
+
+
+INSERT INTO db_acl.attendencelog (serialnumber, pin, exactdate, verified, status, workcode, timeinserts) SELECT compay_reader_id, pin, datetime_reader, verified, status, workcode, timeinserts FROM desktoptimek.attendencelog WHERE `pin` = '33492308' AND `datetime_reader` LIKE '%2020-10-23%'
+
+
+SELECT * FROM `attendencelog` WHERE `exactdate` >= '2020-09-21' AND pin = '33492308'
+
+ WHERE `exactdate` >= '2020-09-01' AND `exactdate` <= '2020-09-21' AND `serialnumber` = 'AF4C174960145'
+ 
+ INSERT INTO db_acl.attendencelog (serialnumber, pin, exactdate, verified, status, workcode, timeinserts) SELECT compay_reader_id, pin, datetime_reader, verified, status, workcode, timeinserts FROM desktoptimek.attendencelog WHERE `compay_reader_id` = 'AF4C174960145' AND `datetime_reader` >= '2020-09-01' AND `datetime_reader` <= '2020-09-21'
+
+
+INSERT INTO db_acl.attendencelog (serialnumber, pin, exactdate, verified, status, workcode, timeinserts) SELECT compay_reader_id, pin, datetime_reader, verified, status, workcode, timeinserts FROM desktoptimek.attendencelog WHERE `pin` = '33492308' AND `datetime_reader` >= '2020-09-21'
+
+INSERT INTO db_acl.attendencelog (serialnumber, pin, exactdate, verified, status, workcode, timeinserts) SELECT compay_reader_id, pin, datetime_reader, verified, status, workcode, timeinserts FROM desktoptimek.attendencelog WHERE `compay_reader_id` = 'AF4C174960145' AND `datetime_reader` >= '2020-09-21'
+SELECT * FROM `attendencelog` WHERE `exactdate` >= '2021-01-24' AND `serialnumber` = 'AF4C174960145'
+INSERT INTO `alfahrm`.`attendencelog` (`serialnumber`, `pin`, `exactdate`, `verified`, `status`, `workcode`, `timeinserts`, `dateinsertserver`) VALUES ('AF4C174960145', '23809802', '2020-12-26 07:02:14', '15', '0', '0', '2020/12/26', CURRENT_TIMESTAMP);
+INSERT INTO alfahrm.attendencelog (serialnumber, pin, exactdate, verified, status, workcode, timeinserts) SELECT compay_reader_id, pin, datetime_reader, verified, status, workcode, timeinserts FROM desktoptime.attendencelog WHERE `compay_reader_id` = 'AF4C174960145' AND `datetime_reader` >= '2021-01-18'
+branches with serialnumber and database names
+INSERT INTO `alfahrm`.`users` (`id`, `pin`, `staffno`, `payroll_category`, `employmenttype_id`, `company_id`, `branch_id`, `department_id`, `jobtitle_id`, `firstname`, `lastname`, `middlename`, `idnumber`, `nhifnumber`, `id_gender`, `nssfnumber`, `nssfstate`, `nhifstate`, `loanstate`, `advancestate`, `payestate`, `saccostate`, `confirmationstatus`, `overtimestate`, `penalisestate`, `lunchstate`, `lunchamount`, `saccoamount`, `pysicaladdress`, `maritalstatus_id`, `dob`, `dateemployeed`, `cellphone`, `jobgroup_id`, `payfrequency_id`, `bank_id`, `bankbranch_id`, `accountnumber`, `basicpay`, `exempt_ot`, `exempt_lost`, `exempt_clocking`, `dailyrate`, `houseallowance`, `passportnumber`, `passportphoto`, `emailaddress`, `postaladdress`, `postalcode`, `town`, `country`, `homephone`, `homedistrict`, `dateadded`, `addedby`, `slug`, `user_id`, `salutation_id`, `jobgrade_id`, `region_id`, `attendence_shiftdef_id`, `designation_id`, `station_id`, `jobstatus_id`, `section_id`, `manager_id`, `astmanager_id`, `employee_code`, `user_image_small`, `user_image_medium`, `user_image_big`, `password`, `category`, `activestateemployee`, `dateterminated`, `dateofconfirmation`, `drivinflicense`, `prevemployer`, `nextemployer`, `ethnicity`, `curiculumvitae`, `yearsofservice`, `supervisedby`) VALUES (NULL, '24521227', '601', '', '1', '0', '5', '3', '0', 'VINCENT ', 'OBABI', 'ORINA ', '', '', '0', '', '1', '1', '1', '1', '1', '1', '0', '0', '0', '1', '50', '1200', '', '0', '', '01-01-2019', '0000000000', '0', '0', '0', '0', '', '400', '0', '0', '0', '8.0', '', '', '', '', '', '', '', '', '', '', '2019-11-12 11:32:48', '0', '0', '', '0', '', '', '1', '', '', '1', '', '0', '0', '006', '50_iconuserdefault.png', '60_iconuserdefault.png', '500_iconuserdefault.png', '123456', '', '1', '', '', '', '', '', '', '', '', '0');
+
+
+INSERT INTO `alfahrm`.`attendencelog` (`serialnumber`, `pin`, `exactdate`, `verified`, `status`, `workcode`, `timeinserts`, `dateinsertserver`) VALUES('AF4C174960145', '26183743', '2021-02-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '26183743', '2021-03-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '00000', '2021-02-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '00000', '2021-03-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '21974339', '2021-02-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '21974339', '2021-03-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '12566878', '2021-02-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '12566878', '2021-03-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '23061186', '2021-02-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '23061186', '2021-03-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '11187482', '2021-02-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '11187482', '2021-03-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '22308810', '2021-02-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '22308810', '2021-03-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '25238302', '2021-02-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '25238302', '2021-03-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '33115481', '2021-02-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '33115481', '2021-03-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '207006164', '2021-02-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '207006164', '2021-03-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '22912021', '2021-02-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '22912021', '2021-03-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '14435764', '2021-02-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '14435764', '2021-03-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '24433916', '2021-02-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '24433916', '2021-03-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '28145264', '2021-02-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '28145264', '2021-03-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '35892471', '2021-02-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '35892471', '2021-03-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '5051518', '2021-02-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '5051518', '2021-03-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '22078010', '2021-02-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '22078010', '2021-03-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '28125278', '2021-02-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '28125278', '2021-03-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '32096178', '2021-02-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '32096178', '2021-03-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '11147052', '2021-02-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '11147052', '2021-03-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '32450752', '2021-02-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '32450752', '2021-03-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '32771196', '2021-02-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '32771196', '2021-03-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '25387856', '2021-02-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '25387856', '2021-03-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '20976407', '2021-02-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '20976407', '2021-03-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '20757881', '2021-02-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '20757881', '2021-03-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '11815645', '2021-02-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '11815645', '2021-03-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '22443772', '2021-02-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '22443772', '2021-03-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '10414729', '2021-02-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '10414729', '2021-03-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '22509044', '2021-02-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '22509044', '2021-03-28 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP)
+HQ LUSAKA      AF4C174960145   desktoptime
+GIKOMBA        AF4C191160402   desktoptimet
+ASL TOWN BRANCH AF4C191160411   desktoptimez
+TD W           AF4C191160404    desktoptimez2
+HQ2            AIOR181860073     desktoptimey
+Laviton        5830753451317     desktoptimeo
+muthithi       5831903080005     desktoptimen
+juja           6583161900709     desktoptimep
+
+
+22078010
+28125278
+22308810 to
+25907554 to
+22161533 to
+32096178
+
+
+11147052
+32450752
+
+32771196
+
+
+25387856
+
+20976407
+20757881
+11815645
+22443772
+10414729
+22509044
+14435764
+24433916
+
+25963554 to
+
+28145264
+35892471
+5051518
+12566878
+23061186
+
+
+11187482
+25162392 to
+561764 to
+
+13394224 to
+
+absent
+14522213 to
+
+22189103 to
+
+22308810
+25238302
+33115481
+25387856
+
+27613541 to
+207006164
+22912021
+
+
+
+25971158
+
+tdw
+32791358
+25078543
+27560252
+35559943
+23983241
+23983241
+11403350
+31570348
+21998561
+34844775
+10978682
+28072181
+
+gikomba
+24329990
+875
+27897240
+
+INSERT INTO `alfahrm`.`users` (`id`, `pin`, `staffno`, `payroll_category`, `employmenttype_id`, `company_id`, `branch_id`, `department_id`, `jobtitle_id`, `firstname`, `lastname`, `middlename`, `idnumber`, `nhifnumber`, `id_gender`, `nssfnumber`, `nssfstate`, `nhifstate`, `loanstate`, `advancestate`, `payestate`, `saccostate`, `confirmationstatus`, `overtimestate`, `penalisestate`, `lunchstate`, `lunchamount`, `saccoamount`, `pysicaladdress`, `maritalstatus_id`, `dob`, `dateemployeed`, `cellphone`, `jobgroup_id`, `payfrequency_id`, `bank_id`, `bankbranch_id`, `accountnumber`, `basicpay`, `exempt_ot`, `exempt_lost`, `exempt_clocking`, `dailyrate`, `houseallowance`, `passportnumber`, `passportphoto`, `emailaddress`, `postaladdress`, `postalcode`, `town`, `country`, `homephone`, `homedistrict`, `dateadded`, `addedby`, `slug`, `user_id`, `salutation_id`, `jobgrade_id`, `region_id`, `attendence_shiftdef_id`, `designation_id`, `station_id`, `jobstatus_id`, `section_id`, `manager_id`, `astmanager_id`, `employee_code`, `user_image_small`, `user_image_medium`, `user_image_big`, `password`, `category`, `activestateemployee`, `dateterminated`, `dateofconfirmation`, `drivinflicense`, `prevemployer`, `nextemployer`, `ethnicity`, `curiculumvitae`, `yearsofservice`, `supervisedby`) VALUES (NULL, '27897240', '87027897240', 'B', '1', '0', '7', '10', '0', 'JOSHUA MAKAU ', 'MUTAVA', '', '', '', '1', '', '1', '1', '1', '1', '1', '1', '0', '0', '0', '1', '50', '1200', '', '2', '', '01-01-2019', '0000000000', '0', '0', '0', '0', '', '400', '0', '0', '0', '8.0', '', '', '', '', '', '', '', '', '', '', '2020-09-14 04:26:57', '0', '0', '', '1', '', '', '1', '', '', '1', '', '0', '0', '874', '50_iconuserdefault.png', '60_iconuserdefault.png', '500_iconuserdefault.png', '123456', '', '1', '', '', '', '', '', '', '', '', '0');
+21974339
+25387856
+22912021
+26183743
+30278964
+
+
+
+INSERT INTO `alfahrm`.`attendencelog` (`serialnumber`, `pin`, `exactdate`, `verified`, `status`, `workcode`, `timeinserts`, `dateinsertserver`) VALUES ('AF4C174960145', '30278964', '2021-02-21 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '30278964', '2021-03-14 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP);
+
+
+INSERT INTO `alfahrm`.`attendencelog` (`serialnumber`, `pin`, `exactdate`, `verified`, `status`, `workcode`, `timeinserts`, `dateinsertserver`) VALUES ('AF4C174960145', '27613541', '2021-02-21 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '27613541', '2021-03-14 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '26183743', '2021-02-21 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '26183743', '2021-03-14 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '22912021', '2021-02-21 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '22912021', '2021-03-14 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '25387856', '2021-02-21 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '25387856', '2021-03-14 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '21974339', '2021-02-21 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '21974339', '2021-03-14 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '12566878', '2021-02-21 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '12566878', '2021-03-14 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '23061186', '2021-02-21 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '23061186', '2021-03-14 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '11187482', '2021-02-21 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '11187482', '2021-03-14 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '22308810', '2021-02-21 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '22308810', '2021-03-14 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '25238302', '2021-02-21 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '25238302', '2021-03-14 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '33115481', '2021-02-21 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '33115481', '2021-03-14 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '25387856', '2021-02-21 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '25387856', '2021-03-14 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '207006164', '2021-02-21 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '207006164', '2021-03-14 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '22912021', '2021-02-21 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '22912021', '2021-03-14 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '14435764', '2021-02-21 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '14435764', '2021-03-14 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '24433916', '2021-02-21 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '24433916', '2021-03-14 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '28145264', '2021-02-21 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '28145264', '2021-03-14 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '35892471', '2021-02-21 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '35892471', '2021-03-14 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '5051518', '2021-02-21 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '5051518', '2021-03-14 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '22078010', '2021-02-21 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '22078010', '2021-03-14 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '28125278', '2021-02-21 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '28125278', '2021-03-14 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '32096178', '2021-02-21 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '32096178', '2021-03-14 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '11147052', '2021-02-21 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '11147052', '2021-03-14 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '32450752', '2021-02-21 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '32450752', '2021-03-14 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '32771196', '2021-02-21 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '32771196', '2021-03-14 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '25387856', '2021-02-21 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '25387856', '2021-03-14 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '20976407', '2021-02-21 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '20976407', '2021-03-14 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '20757881', '2021-02-21 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '20757881', '2021-03-14 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '11815645', '2021-02-21 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '11815645', '2021-03-14 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '22443772', '2021-02-21 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '22443772', '2021-03-14 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '10414729', '2021-02-21 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '10414729', '2021-03-14 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP),('AF4C174960145', '22509044', '2021-02-21 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP), ('AF4C174960145', '22509044', '2021-03-14 00:00:22', '15', '0', '0', '2021/02/24', CURRENT_TIMESTAMP)
+
+33492308
+694
+985
+23565036
+30487276
+22040027
+22282740
+30189696
+
+
+
+
+
+
+22346876
+26787804
+31937717
